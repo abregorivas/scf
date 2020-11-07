@@ -1,0 +1,186 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@layer base {
+  h1 {
+    @apply text-5xl;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+  h3 {
+    @apply text-3xl;
+  }
+  h4 {
+    @apply text-2xl;
+  }
+  h5 {
+    @apply text-xl;
+  }
+  h6 {
+    @apply text-lg;
+  }
+  p,a, blockquote {
+    @apply text-sm;
+  }
+  a {
+    @apply text-blue-600;
+  }
+  /* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px; }
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; } */
+
+  pre {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    overflow-y: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    background: #efefef;
+    border: 1px solid #777;
+    background: #F1F1F1;
+  }
+  pre code {
+    padding: 10px;
+    color: #333;
+  }
+
+
+  /* Use for: Oversized screen titles. Use in moderation. */
+    .h900 {
+      font-size: 35px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 40px;
+      margin-top: 52px;
+    }
+    /* Use for: Empty states and feature introductions. Top level headers. */
+    .h800 {
+      font-size: 29px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 32px;
+      margin-top: 40px;
+    }
+    /* Use Main titles, use only once per page. */
+    .h700 {
+      font-size: 24px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 28px;
+      margin-top: 40px;
+    }
+    /* Use for: Headings that identify key functionality. */
+    .h600 {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: -0.008em;
+      line-height: 24px;
+      margin-top: 28px;
+    }
+      /* Use for: Sub-section and field group headings. */
+    .h500 {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: -0.006em;
+      line-height: 20px;
+      margin-top: 24px;
+    }
+    /* Use for: Deep headings and for highlighting important pieces of information. */
+    .h400 {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: -0.003em;
+      line-height: 16px;
+      margin-top: 16px;
+    }
+ /* Use for: Heading up a group of list items. */
+    .h300 {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 16px;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
+    /* Use for: Low level headings. */
+    .h200 {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 16px;
+      margin-top: 16px;
+    }
+    /* Use for: Lowest level headings. */
+    .h100 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0;
+      line-height: 16px;
+      margin-top: 16px;
+    }
+    ol, ul >li {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0;
+      line-height: 20px;
+      margin-top: 4px;
+    }
+    .quote {
+      background: #f9f9f9;
+      border-left: 10px solid #ccc;
+      margin: 1.5em 10px;
+      padding: 0.75em 10px;
+      padding-top: 1.75em;
+      quotes: "\201C""\201D""\2018""\2019";
+      font-family: sans-serif;
+      
+    }
+    .quote::before {
+      color: #ccc;
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+
+    }
+    blockquote:after {  
+      color: #ccc;
+      content: close-quote;  
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-left: 0.25em;
+      vertical-align: -0.6em;                                                   
+    }
+    .quote p {
+      display: inline;
+    }
+  
+  .quote-inline {
+    line-height: 24px;
+  }
+    
+  }
+
+  @layer components {
+      .btn {
+          @apply px-4 py-2 rounded;
+      }
+  }
